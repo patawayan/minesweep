@@ -20,8 +20,8 @@ const router = createRouter({
     {
       path: "/sweep",
       name: "sweep",
-      component: () => import("../views/Minesweep.vue"),
-    }
+      component: () => import("../views/SweepView.vue"),
+    },
   ],
 });
 

@@ -1,17 +1,17 @@
 <script lang="ts">
-import { useCounterStore } from '@/stores/counter'
+import { useCounterStore } from "@/stores/counter";
 
 export default {
   setup() {
-    const counter = useCounterStore()
+    const counter = useCounterStore();
 
-    counter.count++
+    counter.count++;
     // with autocompletion ✨
-    counter.$patch({ count: counter.count + 1 })
+    counter.$patch({ count: counter.count + 1 });
     // or using an action instead
-    counter.increment()
+    counter.increment();
   },
-}
+};
 </script>
 
 <template>
